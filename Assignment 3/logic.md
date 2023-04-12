@@ -1,9 +1,0 @@
-DBSCAN (Density-Based Spatial Clustering of Applications with Noise) is a clustering algorithm that is commonly used in machine learning and data mining. It is a density-based clustering algorithm, which means that it groups together points that are close to each other in terms of distance and have a high density, while also identifying points that are not part of any cluster (noise).
-
-The DBSCAN algorithm takes two main parameters: `epsilon (ε)` and `min_samples`. `Epsilon` defines the radius around each data point that is considered part of its neighborhood, and `min_samples` specifies the minimum number of data points required to form a dense region.
-
-The algorithm works by starting with an arbitrary data point and expanding the cluster by finding all the neighboring points within the `epsilon` radius. If there are at least `min_samples` points within this radius, a new cluster is formed (this point is called a core point). The process is repeated for each point in the cluster until all points in the cluster are identified, and then the next unvisited point is selected to begin a new cluster. Points that are not part of any cluster are labeled as noise. Border points are points that are part of a cluster but are not core points. it is formed when a core point is within the `epsilon` radius of a non-core point. Rest of the points are considered as noise.
-
-The DBSCAN algorithm has several advantages over other clustering algorithms, including its ability to handle clusters of arbitrary shape and its resistance to noise. However, it can be sensitive to the choice of parameters and may not perform well with datasets of varying densities or high-dimensional data.
-
-Overall, DBSCAN is a useful algorithm for identifying clusters in data and is widely used in applications such as image analysis, data mining, and anomaly detection.
